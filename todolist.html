@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div id="weather-box">
+		<label for="city">Today's weather in</label>
+		<select id="city">
+		  <option value="LosAngeles,CA">Los Angeles</option>
+		  <option value="Honolulu,HI">Honolulu</option>
+		  <option value="Chicago,IL">Chicago</option>
+		  <option value="Seattle,WA">Seattle</option>
+		</select>
+		<span id="weather"></span>
+	</div>
+	<div id="container">
+		<div id="header">
+			<h1>To Do List<i id="plus-sign" class="fas fa-plus"></i></h1> 
+		</div>
+		<div id="main">
+			<form id="form">
+			  <input type="text" id="item-input" name="item" placeholder="Add to-do item here">
+			</form>
+			<div id="list">
+				<ul>
+					<li><span class="checkbox"><i class="far fa-square"></i> </span><span class="list-item">Study for ITP 303 Midterm</span></li>
+					<li><span class="checkbox"><i class="far fa-square"></i> </span><span class="list-item">Buy USC shirt from bookstore</span></li>
+					<li><span class="checkbox"><i class="far fa-square"></i> </span><span class="list-item">Go to Nayeon's office hours</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script
+	  src="http://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"> 
+	</script>
+	<script src="https://kit.fontawesome.com/6f11a5eb2c.js" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+</body>
+</html>
